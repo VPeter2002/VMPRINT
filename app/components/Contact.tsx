@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-slate-500 font-medium uppercase tracking-wider mb-1">Műhely címe</p>
-                <p className="text-white text-lg font-semibold">1111 Budapest, Precíziós u. 42.</p>
+                <p className="text-white text-lg font-semibold">9500 Celldömölk, Precíziós u. 42.</p>
               </div>
             </div>
           </div>
