@@ -51,13 +51,13 @@ export default function Products() {
   };
 
   return (
-    <section className="relative py-24 px-6 lg:px-8 border-t border-white/5 z-20">
+    <section className="relative py-16 px-4 lg:py-24 lg:px-8 border-t border-white/5 z-20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+        <div className="text-center mb-10 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 tracking-tight">
             Kiemelt <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">Munkáink</span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-400 text-base md:text-lg max-w-2xl mx-auto">
             Tekintsd meg legutóbbi referenciáinkat, melyeket mérnöki pontossággal és a megfelelő alapanyagok kiválasztásával készítettünk.
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function Products() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {products.map((product, index) => (
             <motion.div 

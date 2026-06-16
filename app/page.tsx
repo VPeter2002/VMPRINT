@@ -21,7 +21,7 @@ export default function Home() {
         <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-cyan-500/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-24 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
           {/* Bal oszlop: Tartalom */}
           <motion.div 
@@ -30,19 +30,19 @@ export default function Home() {
             transition={{ duration: 0.5, ease: "easeOut" as const }}
             className="flex-1 text-center lg:text-left"
           >
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 lg:mb-6">
               Precíziós <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">3D Nyomtatás</span> <br className="hidden lg:block" />
               Mérnöki Minőségben
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto lg:mx-0">
+            <p className="mt-4 text-base md:text-lg lg:text-xl text-slate-400 mb-8 lg:mb-10 max-w-2xl mx-auto lg:mx-0">
               Keltse életre ötleteit ipari szintű pontossággal. Prototípusgyártás, egyedi alkatrészek és funkcionális modellek gyorsan, kompromisszumok nélkül.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a href="#contact" className="w-full sm:w-auto text-center px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 lg:gap-4">
+              <a href="#contact" className="w-full sm:w-auto text-center px-6 py-3 lg:px-8 lg:py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 shadow-[0_0_15px_rgba(249,115,22,0.3)]">
                 Azonnali Árajánlat
               </a>
-              <a href="#services" className="w-full sm:w-auto text-center px-8 py-4 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 text-white font-semibold rounded-lg transition-all duration-200">
+              <a href="#services" className="w-full sm:w-auto text-center px-6 py-3 lg:px-8 lg:py-4 bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 text-white font-semibold rounded-lg transition-all duration-200">
                 Géppark és Szolgáltatások
               </a>
             </div>
@@ -69,15 +69,11 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-50"></div>
               <div className="relative aspect-[4/3] w-full bg-slate-900/50 rounded-xl flex items-center justify-center border border-white/5 overflow-hidden">
                 
-                {/* Ide jöhet a valós <Image /> a jövőben */}
-                <div className="text-slate-500 flex flex-col items-center">
-                  <svg className="w-16 h-16 mb-4 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                  </svg>
-                  <span className="text-sm font-medium tracking-widest uppercase text-slate-400">
-                    Prusa Mini / Prototípus
-                  </span>
-                </div>
+                <video 
+                  src="/vmprint.mp4"
+                  autoPlay loop muted playsInline
+                  className="w-full h-full object-cover rounded-xl"
+                />
                 
               </div>
             </div>
